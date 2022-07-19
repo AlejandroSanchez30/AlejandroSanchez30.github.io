@@ -29,8 +29,15 @@ btnGeneratePassword.addEventListener("click", (event) => {
 });
 
 btnCopyPassword.addEventListener('click', () => {
-    navigator.clipboard.writeText(passwordHolder.value);
-    showMessage('success', 'Password copied')
+    if(passwordHolder.value == '')
+    {
+        showMessage('danger', 'The password is empty');
+    }
+    else{
+        navigator.clipboard.writeText(passwordHolder.value);
+        showMessage('success', 'Password copied');
+
+    }
 });
 
 
