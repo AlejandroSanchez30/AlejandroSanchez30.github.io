@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <title>Stopwatch</title>
+  </head>
+  <body>
+    <main class="app-container">
+      <div class="stopwatch-container">
+        <div class="timer-container">
+          <h1 id="time"></h1>
+        </div>
+        <div class="control-container">
+          <button class="control-button" id="btnStart"><i class="fa-solid fa-play"></i></button>
+          <button class="control-button" id="btnPause"><i class="fa-solid fa-pause"></i></button>
+          <button class="control-button" id="btnStop"><i class="fa-solid fa-stop"></i></button>
+          <button class="control-button" id="btnLap"><i class="fa-solid fa-stopwatch"></i></button>
+        </div>
+      </div>
+        <ul  id="lap-list" class="lap-list">
+          <!-- <li class="lap">00:00:00:00</li> -->
+
+        </ul>
+    
+    </main>
+
+    <script src="https://kit.fontawesome.com/d202a6f2f4.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #66BFBF;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.app-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.stopwatch-container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hide{
+    display: none;
+}
+
+.timer-container{
+    text-align: center;
+    width: 300px;
+    font-size: 2rem;
+    color: gray;
+    background-color: white;
+    border-radius: 5px;
+    margin: 5px;
+    letter-spacing: 5px;
+
+}
+
+.control-button{
+    font-size: 4rem;
+    width: 5rem;
+    height: 5rem;
+    color: #FF0063;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.lap-list{
+   
+    height: 300px;
+
+    overflow-y: auto;
+
+    
+}
+.lap{
+    color: #FF0063;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px 10px;
+    font-size: 2.5rem;
+    margin: 1rem;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .app-container{
+   
+       
+        flex-direction: column;
+        height: 100vh;
+
+    }
+
+    .lap-list{
+   
+        margin-top: 2rem;
+        height: 300px;
+    
+        overflow-y: auto;
+    
+        
+    }
+    
+}
