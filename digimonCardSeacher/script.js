@@ -89,7 +89,6 @@ function showCards(cards = null, cleanContainer = true) {
         });
         cardImage.addEventListener('load', () => {
           cardDiv.classList.remove('loading');
-          console.log("image loaded");
         });
         
         cardDiv.appendChild(cardImage);
@@ -273,7 +272,7 @@ function getSearchParameters() {
     let colorActive = checkActiveFilter(colorFilters);
     let typeActive = checkActiveFilter(typeFilters);
   
-    console.log("color: " + colorActive);
+    //console.log("color: " + colorActive);
     if (textField.value.length > 0) {
       parameters += `n=${textField.value}`;
       if (colorActive != null) {
