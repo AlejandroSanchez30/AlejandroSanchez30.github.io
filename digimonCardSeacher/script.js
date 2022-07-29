@@ -93,8 +93,11 @@ function showCards(cards = null, cleanContainer = true) {
         
         cardDiv.appendChild(cardImage);
         cardContainer.appendChild(cardDiv);
-        
     });
+ }
+ else{
+  cardContainer.innerHTML='';
+  errorContainer.classList.remove('hide');
  }
 }
 
