@@ -69,6 +69,7 @@ async function getData(urlParameters = "") {
   const imageSkeleton = document.getElementById('cardSkeleton');
 //Display the cards received as parameter
 function showCards(cards = null, cleanContainer = true) {
+  errorContainer.classList.add('hide');
  if(cards != null)
  {
     if(cleanContainer)
